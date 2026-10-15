@@ -1,0 +1,16 @@
+#!/bin/sh
+# Report findings as FILE:LINE: MESSAGE over the Org files beneath the
+# working directory, or over the files given. Exit 0 when there are
+# none, 1 when there are. The policy that names this check says what it
+# reports.
+real=$0
+while [ -L "$real" ]; do
+  link=$(readlink "$real")
+  case $link in
+    /*) real=$link ;;
+    *) real=$(dirname "$real")/$link ;;
+  esac
+done
+D=$(cd "$(dirname "$real")" && pwd)
+. "$D/lib/files.sh"
+run_check "$D" semicolons.awk "$@"
