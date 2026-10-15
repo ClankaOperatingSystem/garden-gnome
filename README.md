@@ -22,6 +22,13 @@ Two things read this repository:
 - **A bugflow server** judges pull requests by it when a binding
   repository deploys it.
 
+## Skills
+
+`skills/garden-gnome-rewrite/` rewrites a garden's prose into the voice,
+one scope at a time, changing wording only.
+The `check-*` scripts in a skill's `scripts/` answer the policies that a
+script can judge, and a garden's lint runs them.
+
 ## One source, compiled skills
 
 The doctrine and the policies are written once, in `doctrine/` and
