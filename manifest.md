@@ -1,7 +1,7 @@
 agent_id: garden
 summary: What a garden's Org files say, and how its tree of responsibilities and projects is divided
 subjects: document/file, scope/canon
-policies: VO-01, VO-02, VO-03, VO-04, VO-05, VO-06
+policies: VO-01, VO-02, VO-03, VO-04, VO-05, VO-06, ST-01, ST-02
 ---
 
 This file describes the gnome to whatever reads it. The lines above
