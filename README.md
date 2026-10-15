@@ -26,6 +26,8 @@ Two things read this repository:
 
 `skills/garden-gnome-rewrite/` rewrites a garden's prose into the voice,
 one scope at a time, changing wording only.
+`skills/garden-gnome-structure/` finds how a garden's work could be
+divided better, and raises each accepted proposal as a task.
 The `check-*` scripts in a skill's `scripts/` answer the policies that a
 script can judge, and a garden's lint runs them.
 
