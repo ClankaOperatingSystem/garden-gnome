@@ -1,0 +1,33 @@
+#!/bin/sh
+# Compare each Org file given with its committed version, after a rewrite
+# that may change wording only. Report as FILE: MESSAGE:
+#   links      a link's target or description differs
+#   structure  a heading, drawer line, #+ keyword line or logbook entry differs
+#   fewer W    the file has fewer of the modal word W than before
+# Run it in the repository that holds the files. Exit 0 when nothing
+# differs, 1 when something does, 2 when a file has no committed version.
+status=0
+scratch=$(mktemp -d)
+trap 'rm -rf "$scratch"' EXIT
+for f in "$@"; do
+  if ! git show "HEAD:./$f" > "$scratch/old" 2>/dev/null; then
+    echo "$f: no committed version"
+    status=2
+    continue
+  fi
+  grep -oE '\[\[[^]]+\]' "$scratch/old" | sort > "$scratch/a"
+  grep -oE '\[\[[^]]+\]' "$f" | sort > "$scratch/b"
+  cmp -s "$scratch/a" "$scratch/b" || { echo "$f: links"; status=1; }
+  grep -E '^\*+ |^[ \t]*:|^[ \t]*#\+|^- State' "$scratch/old" | sort > "$scratch/a"
+  grep -E '^\*+ |^[ \t]*:|^[ \t]*#\+|^- State' "$f" | sort > "$scratch/b"
+  cmp -s "$scratch/a" "$scratch/b" || { echo "$f: structure"; status=1; }
+  for w in may might must should cannot; do
+    before=$(grep -oiw "$w" "$scratch/old" | wc -l | tr -d " ")
+    after=$(grep -oiw "$w" "$f" | wc -l | tr -d " ")
+    if [ "$after" -lt "$before" ]; then
+      echo "$f: fewer $w ($before to $after)"
+      [ $status -eq 0 ] && status=1
+    fi
+  done
+done
+exit $status
