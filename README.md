@@ -6,21 +6,32 @@ the voice of the prose in those files, and the structure of the tree.
 A doctrine of clauses, a policy for each judgement, cases that test the
 judge, and skills that apply them.
 
-This repository is a gnome: it implements the gnome protocol, which
-bugflow's [policy package](https://github.com/bugflow/bugflow/blob/master/docs/policy-package.md) specifies.
-[What a gnome is](https://github.com/bugflow/bugflow/blob/master/docs/gnomes.md) explains a gnome's parts, who reads each,
-and a maintainer's tasks.
+This repository is a gnome: a methodology that also holds a doctrine,
+its policies and its cases. bugflow's
+[What a gnome is](https://github.com/bugflow/bugflow/blob/master/docs/gnomes.md)
+defines a gnome and a maintainer's tasks, its
+[policy package](https://github.com/bugflow/bugflow/blob/master/docs/policy-package.md)
+specifies each file, and its
+[words](https://github.com/bugflow/bugflow/blob/master/docs/words.md)
+give each term one line.
 
-Two things read this repository:
+Two things read this repository and nothing in it is written for one
+alone:
 
-- **A garden** installs its skills with the skills command-line tool:
+- **A garden** declares it as a methodology in its configuration, at a
+  tag, as ClankOS's `clankos-run help install` says:
 
-      npx skills add ClankaOperatingSystem/garden-gnome
+      methodologies:
+        - source: https://github.com/ClankaOperatingSystem/garden-gnome.git
+          ref: TAG
 
-  or declares the repository as a methodology in its configuration.
+  The install copies each skill under `skills/` into the garden's
+  skills, and the garden's lint runs the checks in their `scripts/`.
 
 - **A bugflow server** judges pull requests by it when a binding
-  repository deploys it.
+  deploys it. bugflow's
+  [review document](https://github.com/bugflow/bugflow/blob/master/docs/review.md)
+  says what a review writes and where each part comes from.
 
 ## Skills
 
@@ -33,17 +44,10 @@ script can judge, and a garden's lint runs them.
 
 ## One source, compiled skills
 
-The doctrine and the policies are written once, in `doctrine/` and
-`policies/` at the root of this repository. A bugflow server reads them
-there.
-
-The skills command-line tool copies a skill's directory and nothing
-outside it. So `make` copies `doctrine/` and `policies/` into the
-`references/` directory of each skill in `skills/`. The copies are
-committed, and each skill installs complete in the usual way.
-
-Edit the files at the root, never a copy in a skill. `make check` fails
-when a copy differs from what `make` writes.
+`doctrine/` and `policies/` at the root are the originals. After a
+change in either, run `make`, which writes each skill's copy in its
+`references/`; the copies are committed, and `make check` fails when a
+copy differs from what `make` writes.
 
 ## Checks
 
