@@ -3,8 +3,8 @@
 Standards for a garden: the Org files that hold a tree of
 responsibilities, projects and tasks. The standards cover two things:
 the voice of the prose in those files, and the structure of the tree.
-A doctrine of clauses, a policy for each judgement, cases that test the
-judge, and skills that apply them.
+This repository holds a doctrine of clauses, a policy for each
+judgement, cases that test the judge, and skills that apply them.
 
 This repository is a gnome: a methodology that also holds a doctrine,
 its policies and its cases. bugflow's
