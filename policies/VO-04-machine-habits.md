@@ -14,8 +14,8 @@ clause: PROSE-36 no narration
 clause: PROSE-37 no self-praise
 clause: PROSE-38 no questions to the reader
 ---
-Judge this Org document against the clauses listed below: does its
-prose carry a habit of machine-written prose?
+Judge whether the prose of this Org document carries a habit of
+machine-written prose, against the clauses listed below.
 
 Judge only these clauses:
 - PROSE-32: a sentence whose work is its rhythm, not a fact
