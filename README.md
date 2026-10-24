@@ -46,7 +46,7 @@ script can judge, and a garden's lint runs them.
 
 `doctrine/` and `policies/` at the root are the originals. After a
 change in either, run `make`, which writes each skill's copy in its
-`references/`; the copies are committed, and `make check` fails when a
+`references/`. The copies are committed, and `make check` fails when a
 copy differs from what `make` writes.
 
 ## Checks
