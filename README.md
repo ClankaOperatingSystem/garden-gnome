@@ -54,4 +54,6 @@ copy differs from what `make` writes.
     make check
 
 checks every file against the formats in the policy package, and checks
-that each skill's copies match the root.
+that each skill's copies match the root. It runs `check-semicolons` and
+`check-em-dashes` over the gnome's own prose as well, so that the gnome
+keeps the voice it judges.
