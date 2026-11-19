@@ -9,6 +9,9 @@ The voice is the doctrine in `references/doctrine/`.
 The policies in `references/policies/` say how each part of it is judged.
 Read both before you change a word.
 
+Natural English comes before every other clause of the voice.
+Read each rewritten sentence aloud, and write it again if no one would say it.
+
 A rewrite changes wording only.
 It does not change what a file says, what it links to, or how it is organised.
 Facts that are wrong, stale or contradictory are noted for the structure pass, not fixed.

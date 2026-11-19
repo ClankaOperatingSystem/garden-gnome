@@ -16,13 +16,18 @@ Files:
 Read the voice first, in the skill's `references/doctrine/01-voice.md`.
 Read one approved rewrite, if the person names a commit, and match its style and degree of change.
 
+Natural English comes first.
+Write each sentence as a careful person would say it to a colleague.
+A sentence that keeps every rule below and that no one would say is wrong, so write it again.
+
 The rules that matter most in practice:
 - Put one sentence or one clause on each line.
 - Use no semicolons and no em dashes in prose.
 - Keep each sentence to 25 words or fewer.
 - Use the active voice, and name the actor.
 - Restore dropped articles, subjects and verbs.
-- Use plain verbs, not phrasal or Latinate ones.
+- Use the ordinary verb for the action. "Set up" and "take over" are ordinary.
+- Make sure the reader can tell what each "it" and "its" refers to.
 - Write a sequence of three or more steps as a list.
 - Turn questions to the reader into checks or statements.
 
