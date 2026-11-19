@@ -4,6 +4,27 @@ This doctrine applies to the prose in a garden's Org files: headings,
 task bodies, and the pages of projects and responsibilities. It does not
 apply to quotations, code or sealed records.
 
+## Natural English
+
+The clauses in this section come before every other clause. The other
+clauses make natural English shorter and more exact. They never excuse
+an unnatural sentence. When a sentence keeps another clause only by
+becoming unnatural, write it again in different words. If no natural
+sentence keeps the other clause, keep the natural sentence.
+
+**PROSE-39. Natural English.** Write each sentence as a careful person
+would say it to a colleague. The test is to read the sentence aloud. If
+no one would say it, write it again.
+
+**PROSE-40. Ordinary phrasing.** Use the phrase that people ordinarily
+use for the thing. A person holds a role, a team makes a decision, and
+a question is still open. Do not build an unusual phrase to avoid a
+common one.
+
+**PROSE-41. Clear reference.** The reader can tell at once what each
+"it", "its", "this" and "that" refers to. Where two nouns could fit,
+repeat the noun.
+
 ## Words
 
 **PROSE-1. Plain register.** Write as one engineer to another. State
@@ -21,7 +42,8 @@ action.
 check of the log".
 
 **PROSE-6. No phrasal verbs.** Write "start", not "spin up". Write
-"read", not "dive into".
+"read", not "dive into". A common phrasal verb that is the ordinary
+word for the action, such as "set up" or "take over", complies.
 
 **PROSE-7. Exact properties.** Name the exact property: accurate,
 complete, current. Use "honest" only where the subject could lie.
@@ -63,7 +85,8 @@ result is the point.
 rewrite does not change "may have failed" to "failed".
 
 **PROSE-19. No dropped words.** Keep the subject, the verb and the
-article.
+article. A statement in running prose is a whole sentence. A noun
+phrase that ends in a full stop is not a sentence.
 
 **PROSE-20. Noun clusters.** Put no more than three nouns in a row.
 
