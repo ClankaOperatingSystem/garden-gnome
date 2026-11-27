@@ -164,3 +164,9 @@ thing. It does not promise an answer and keep the answer back. Write
 "A backup must restore within an hour", not "What a backup must do".
 The test is to read the heading alone. If the reader must ask "and
 what is it?", put the answer in the heading.
+
+**PROSE-45. No announcements.** Open a page or a section with its
+subject. Do not open it with a sentence about the page. Write "Library
+books go back on the second Saturday", not "This page describes when
+library books go back". The test is to strike the sentence. If the
+reader loses no fact about the subject, the sentence is an announcement.
