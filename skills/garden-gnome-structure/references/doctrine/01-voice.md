@@ -158,3 +158,9 @@ or "a solid foundation".
 **PROSE-38. No questions to the reader.** A heading is not a question. A
 question mark belongs only in an open question that names what would
 settle it.
+
+**PROSE-42. No teasing.** A heading states its point or names its
+thing. It does not promise an answer and keep the answer back. Write
+"A backup must restore within an hour", not "What a backup must do".
+The test is to read the heading alone. If the reader must ask "and
+what is it?", put the answer in the heading.
