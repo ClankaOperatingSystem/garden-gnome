@@ -101,6 +101,16 @@ opening words: they must not form a phrase that the sentence does not mean.
 **PROSE-24. Semantic line breaks.** Put one sentence or one clause on
 each line. No policy judges this clause.
 
+**PROSE-43. Requirements by result.** State a requirement as the result
+that it gives. Write "The report gives the buyer verified figures", not
+"The report stops the seller from misleading the buyer". A prohibition
+complies when the forbidden thing is the point, as in "The service
+must not store passwords".
+
+**PROSE-44. A sentence for each party.** When a requirement serves two
+parties, give each party's need its own sentence. Do not put one
+party's need in a clause that begins "without", "while" or "subject to".
+
 ## Paragraphs and pages
 
 **PROSE-25. One topic to a paragraph.** A paragraph has one topic and
