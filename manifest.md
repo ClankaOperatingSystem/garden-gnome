@@ -4,9 +4,8 @@ subjects: document/file, scope/canon
 policies: VO-01, VO-02, VO-03, VO-04, VO-05, VO-06, VO-07, ST-01, ST-02
 ---
 
-This file describes the gnome to whatever reads it. The lines above
-the three dashes are read by a bugflow server and by the format tests.
-The text below is for a person.
+A bugflow server and the format tests read the lines above the three
+dashes. The text below is for a person.
 
 - `agent_id` is the reviewer's id on a server. The commit status on a
   pull request has this name.
